@@ -1,0 +1,121 @@
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte da página */
+    line-height: 1.6; /* Ajusta a altura das linhas para melhor legibilidade */
+    margin: 0; /* Remove margens padrões */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #f4f4f4; /* Define a cor de fundo da página */
+    color: #333; /* Define a cor do texto */
+}
+
+/* Contêiner principal */
+.container {
+    max-width: 900px; /* Limita a largura máxima do contêiner */
+    margin: 20px auto; /* Centraliza o contêiner na tela */
+    background: #fff; /* Define o fundo como branco */
+    padding: 20px; /* Adiciona um preenchimento interno */
+    border-radius: 8px; /* Arredonda os cantos do contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto do cabeçalho */
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+}
+
+/* Tamanho do título principal */
+header h1 {
+    font-size: 2.5em; /* Define o tamanho do título */
+    margin: 0; /* Remove margens do título */
+}
+
+/* Estilo do subtítulo no cabeçalho */
+header p {
+    font-size: 1.2em; /* Ajusta o tamanho da fonte do subtítulo */
+    color: #555; /* Define a cor do subtítulo */
+}
+
+/* Layout flexível para divisão da página em 2 colunas */
+.layout {
+    display: flex; /* Utiliza o modelo flexbox para dividir em colunas */
+    gap: 0; /* Remove espaço extra entre as colunas */
+}
+
+/* Estilo da coluna da esquerda */
+.left-column {
+    width: 50%; /* Define largura simétrica para a coluna esquerda */
+    border-right: 2px solid #ddd; /* Adiciona uma borda à direita */
+    padding-right: 20px; /* Espaço interno à direita */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}
+
+/* Estilo da coluna da direita */
+.right-column {
+    width: 50%; /* Define largura simétrica para a coluna direita */
+    padding-left: 20px; /* Espaço interno à esquerda */
+    box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+}
+
+/* Estilos gerais para as seções */
+section {
+    margin-bottom: 20px; /* Espaço abaixo de cada seção */
+}
+
+/* Estilo dos títulos das seções */
+section h2 {
+    font-size: 1.8em; /* Define o tamanho da fonte */
+    color: #444; /* Define a cor do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    position: relative; /* Permite o uso de ::after para adicionar a linha */
+}
+
+/* Linha decorativa abaixo dos títulos das seções */
+section h2::after {
+    content: ""; /* Cria um conteúdo vazio para adicionar a linha */
+    display: block; /* Faz a linha ser exibida como um bloco */
+    width: 50px; /* Define o comprimento da linha */
+    height: 2px; /* Define a altura da linha */
+    background-color: #444; /* Define a cor da linha */
+    margin-top: 5px; /* Espaço entre o título e a linha */
+}
+
+/* Estilos para a seção de links de contato */
+.contacts {
+    display: flex; /* Alinha os ícones horizontalmente */
+    gap: 15px; /* Espaço entre os ícones */
+    margin-top: 10px; /* Espaço acima dos ícones */
+}
+
+/* Estilo dos ícones de contato */
+.contact-icon {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    background-color: #333; /* Define o fundo dos ícones como cinza escuro */
+    color: #fff; /* Cor dos ícones como branco */
+    width: 40px; /* Largura dos ícones */
+    height: 40px; /* Altura dos ícones */
+    border-radius: 50%; /* Torna os ícones circulares */
+    display: flex; /* Alinha o conteúdo do ícone com flexbox */
+    justify-content: center; /* Centraliza o conteúdo dentro do ícone */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona um efeito suave ao passar o mouse */
+}
+
+/* Estilo quando o mouse passa por cima dos ícones */
+.contact-icon:hover {
+    background-color: #007bff; /* Altera a cor de fundo para azul ao passar o mouse */
+    color: #fff; /* Mantém a cor do ícone branca */
+}
+
+/* Ajusta o tamanho do ícone dentro do círculo */
+.contact-icon i {
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+/* Estilos do rodapé */
+footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    margin-top: 20px; /* Espaço acima do rodapé */
+    font-size: 0.9em; /* Tamanho do texto do rodapé */
+    color: #777; /* Cor do texto do rodapé */
+}

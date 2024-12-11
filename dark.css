@@ -1,0 +1,257 @@
+    body {
+        font-family:   Candara, sans-serif; /* Define a fonte da página */
+        line-height: 1.6; /* Ajusta a altura das linhas para melhor legibilidade */
+        margin: 0; /* Remove margens padrões */
+        padding: 0; /* Remove o preenchimento padrão */
+        color: #e6e6e6; /* Define a cor do texto */
+    }
+    h1, h2 {
+        font-family: 'Montserrat', Candara ,sans-serif;
+    }
+    h2::after {
+        content: ""; /* Cria um conteúdo vazio para adicionar a linha */
+        display: block; /* Faz a linha ser exibida como um bloco */
+        width: 60px; /* Define o comprimento da linha */
+        height: 2px; /* Define a altura da linha */
+        background-color: #C3941D; /* Define a cor da linha */
+        margin-top: 7px; /* Espaço entre o título e a linha */
+    }
+    .container{
+        position: relative;
+        max-width: 800px; /* Limita a largura máxima do contêiner */
+        margin: 0px auto; /* Centraliza o contêiner na tela */
+        background: linear-gradient(180deg, #0c0c0c, #1A1A1A);
+        padding: 20px; /* Adiciona um preenchimento interno */
+        border-radius: 8px; /* Arredonda os cantos do contêiner */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+        text-align: justify;
+        
+    }
+
+    .pdf button {
+        position: absolute; /* Permite que o elemento seja posicionado em relação à tela */
+        top: 20px; /* Distância do topo da tela */
+        right: 20px; /* Distância da borda direita da tela */
+        cursor: pointer;
+        border-radius: 5px; 
+        padding: 5px 10px;
+        background-color: #DAA520;
+        color: #000;
+        border: 2px solid #8E6C15; /* Destaca mais o botão */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s ease, background-color 0.2s ease; 
+        opacity: 0.9;
+        border: none;
+    }
+
+    .pdf button:hover {
+        background-color: #ffc124; /* Torna o botão mais brilhante no hover */
+        transform: scale(1.1); /* Dá a sensação de interação */
+    }
+    h1{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    /* Centraliza os itens horizontalmente */
+        margin-bottom: 0;
+        font-size: 40px;
+        color: #DAA520;
+    }
+
+    header p{ 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    /* Centraliza os itens horizontalmente */
+        margin-top: 0%;
+        font-size: 19px;
+        color: #C3941D;
+    }
+
+    header{
+        margin-bottom: 20px;
+    }
+
+    h2{
+        color: #DAA520;
+    }
+
+    h3{
+        color: #C3941D;
+    }
+
+
+    .layout {
+        display: flex; /* Utiliza o modelo flexbox para dividir em colunas */
+        gap: 0; /* Remove espaço extra entre as colunas */
+    }
+
+    .left-column {
+        width: 50%; /* Define largura simétrica para a coluna esquerda */
+        border-right: 2.4px solid #ac821a; /* Adiciona uma borda à direita */
+        padding-right: 20px; /* Espaço interno à direita */
+        box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    }
+
+    .right-column {
+        width: 50%; /* Define largura simétrica para a coluna direita */
+        padding-left: 20px; /* Espaço interno à esquerda */
+        box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+    }
+
+    .educacao h3{
+        margin-bottom: 10px;
+        
+    }
+    .educacao h4{
+        margin-top: 0;
+        font-size: 15px;
+        margin-bottom: 0;
+        
+    }
+
+    .educacao p{
+        margin-top: 0;
+        
+    }
+    .left-column ul {
+        margin-top: 10px;
+        margin-bottom: 7px;
+        padding-left: 20px; /* Ajusta alinhamento */
+        line-height: 1.8; /* Maior espaçamento entre os itens */
+    }
+
+    .left-column li{
+        margin-top: 0px;
+        margin-bottom: 0px;      
+    }
+    .left-column ul li {
+        position: relative; /* Permite posicionar o checkmark em relação ao item */
+        margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+        padding-left: 17px; /* Espaço para o checkmark */
+        list-style: none; /* Remove o estilo padrão da lista */
+    }
+    
+    .left-column ul li::before {
+        content: "✔"; /* Adiciona o símbolo de checkmark */
+        position: absolute; /* Permite posicionar o ícone independentemente do texto */
+        left: 0; /* Posiciona à esquerda do item */
+        top: 0; /* Alinha verticalmente com o texto */
+        color: #DAA520; /* Define a cor dourada */
+        font-size: 14px; /* Ajusta o tamanho do checkmark */
+    }
+    strong{
+        color: #ffc124ed;
+    }
+    html, body {
+    background: linear-gradient(135deg, #0c0c0c, #1e1e1e);
+}
+
+a {
+    color: #DAA520;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffc124; /* Dourado mais brilhante */
+    text-decoration:underline;
+}
+
+/* Footer principal */
+.footer-layout {
+    display: flex;
+    justify-content: space-around; /* Cria espaço uniforme entre as colunas */
+    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    padding: 20px 10px;
+    border-top: 2px solid #C3941D; /* Linha dourada separando o footer */
+}
+
+.footer-column {
+    text-align: left; /* Alinha o conteúdo à esquerda */
+    width: 40%; /* Define a largura de cada coluna */
+    color: #C3941D; /* Cor dos textos */
+}
+
+.footer-column h3 {
+    font-family:   Candara, sans-serif; 
+    font-size: 20px; /* Tamanho do título */
+    color: #ffc124; /* Cor dourada */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Deixa os títulos em caixa alta */
+    border-bottom: 2px solid #C3941D; /* Linha decorativa abaixo do título */
+    display: inline-block; /* Faz o título se comportar como bloco para a linha */
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.footer-column a {
+    display: flex; /* Ícone e texto alinhados horizontalmente */
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #DAA520; /* Cor inicial dos links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Animação de cor e escala */
+    font-size: 16px; /* Tamanho do texto */
+}
+
+.footer-column a:hover {
+    color: #ffc124; /* Cor dourada mais brilhante no hover */
+    transform: scale(1.05); /* Leve efeito de "zoom" */
+}
+
+.footer-column i {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+    color: #ffc124; /* Cor inicial dos ícones */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animação de ícones no hover */
+}
+
+.footer-column a:hover i {
+    color: #DAA520; /* Troca a cor do ícone no hover */
+    transform: rotate(15deg); /* Gira o ícone levemente no hover */
+}
+.footer-column {
+    font-size: 13.369px;
+    font-family: Verdana ,sans-serif;
+}
+.educacao .curso {
+    display: flex; /* Alinha logo e texto lado a lado */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin-bottom: 20px; /* Espaçamento entre os cursos */
+}
+
+.educacao .curso .logo {
+    width: 50px; /* Largura fixa para as logos */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 15px; /* Espaçamento entre a logo e o texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para destaque */
+}
+
+.educacao h3, .educacao h4, .educacao p {
+    margin: 0; /* Remove margens adicionais */
+}
+
+.educacao h3 {
+    margin-bottom: 3px; /* Espaçamento sutil abaixo do título */
+    color: #C3941D; /* Cor dourada */
+}
+
+.educacao h4 {
+    font-size: 14px; /* Texto um pouco menor para o subtítulo */
+    color: #DAA520; /* Dourado claro */
+}
+
+.educacao p {
+    font-size: 14px; /* Tamanho do texto */
+    color: #e6e6e6; /* Cor do texto principal */
+    line-height: 1.5; /* Altura da linha */
+}
+.educacao .curso .logo.unipe {
+    filter: brightness(75%); /* Reduz o brilho */
+}

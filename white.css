@@ -1,0 +1,245 @@
+body {
+    font-family: Candara, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #222; /* Texto mais escuro */
+}
+
+h1, h2 {
+    font-family: 'Montserrat', Candara, sans-serif;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #444; /* Cinza escuro */
+    margin-top: 7px;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0px auto;
+    background: linear-gradient(180deg, #e6e6e6, #d9d9d9); /* Tons de cinza mais escuros */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    text-align: justify;
+}
+
+.pdf button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #555; /* Botão cinza escuro */
+    color: #fff; /* Texto branco */
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra mais visível */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    opacity: 1;
+}
+
+.pdf button:hover {
+    background-color: #666; /* Cor de hover mais visível */
+    transform: scale(1.1);
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 40px;
+    color: #222; /* Texto mais escuro */
+}
+
+header p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0%;
+    font-size: 19px;
+    color: #444; /* Texto secundário mais escuro */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #222; /* Títulos mais escuros */
+}
+
+h3 {
+    color: #444; /* Subtítulos mais escuros */
+}
+
+.layout {
+    display: flex;
+    gap: 0;
+}
+
+.left-column {
+    width: 50%;
+    border-right: 2px solid #555; /* Borda mais escura */
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.right-column {
+    width: 50%;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.educacao h3 {
+    margin-bottom: 10px;
+}
+
+.educacao h4 {
+    margin-top: 0;
+    font-size: 15px;
+    margin-bottom: 0;
+    color: #222; /* Texto secundário ajustado */
+}
+
+.educacao p {
+    margin-top: 0;
+}
+
+.left-column ul {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    line-height: 1.8;
+}
+
+.left-column li {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #222; /* Texto de listas mais escuro */
+}
+
+html, body {
+    background: linear-gradient(135deg, #d9d9d9, #c4c4c4); /* Fundo mais escuro */
+}
+
+a {
+    color: blue; /* Links mais escuros */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #555; /* Hover mais contrastante */
+    text-decoration: underline;
+}
+
+/* Footer principal */
+.footer-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px 10px;
+    border-top: 2px solid #555; /* Borda mais escura */
+}
+
+.footer-column {
+    text-align: left;
+    width: 40%;
+    color: #444; /* Texto ajustado */
+}
+
+.footer-column h3 {
+    font-family: Candara, sans-serif;
+    font-size: 20px;
+    color: #222; /* Títulos do rodapé mais escuros */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #666; /* Borda de destaque no rodapé */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #222; /* Links mais visíveis */
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+}
+
+.footer-column a:hover {
+    color: #555; /* Hover mais escuro */
+    transform: scale(1.05);
+}
+
+.footer-column i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #444; /* Ícones mais escuros */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-column a:hover i {
+    color: #222; /* Ícones em hover mais destacados */
+    transform: rotate(15deg);
+}
+
+.footer-column {
+    font-size: 13.369px;
+    font-family: Verdana, sans-serif;
+}
+.educacao .curso {
+    display: flex; /* Alinha logo e texto lado a lado */
+    align-items: flex-start; /* Alinha os itens no topo */
+    margin-bottom: 20px; /* Espaçamento entre os cursos */
+}
+
+.educacao .curso .logo {
+    width: 50px; /* Largura fixa para as logos */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 15px; /* Espaçamento entre a logo e o texto */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para destaque */
+}
+
+.educacao h3, .educacao h4, .educacao p {
+    margin: 0; /* Remove margens adicionais */
+}
+
+.educacao h3 {
+    margin-bottom: 3px; /* Espaçamento sutil abaixo do título */
+}
+
+.educacao h4 {
+    font-size: 14px; /* Texto um pouco menor para o subtítulo */
+}
+
+.educacao p {
+    font-size: 14px; /* Tamanho do texto */
+    line-height: 1.5; /* Altura da linha */
+}
+.educacao .curso .logo.unipe {
+    filter: brightness(75%); /* Reduz o brilho */
+}
+
+strong {
+    color: #000; /* Fortemente destacado com cinza escuro */
+}
